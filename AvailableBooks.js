@@ -30,10 +30,12 @@ class Book {
         this.numCopies = numCopies;
     }
 
+// Getter
     get availability() {
         return this.getAvailability()
     }
 
+// Method
     getAvailability() {
         if (this.numCopies === 0) {
             return "Out of Stock";
@@ -52,12 +54,35 @@ class Book {
 }
 
 
-const HungerGames = new Book("Hunger Games", "Suzanne Collins", 123919, 5);
+// const HungerGames = new Book("Hunger Games", "Suzanne Collins", 123919, 5);
 
-console.log(HungerGames.getAvailability());
-HungerGames.restock(12);
+// console.log(HungerGames.getAvailability());
+// HungerGames.restock(12);
 
-console.log(HungerGames.getAvailability());
-HungerGames.sell(17);
+// console.log(HungerGames.getAvailability());
+// HungerGames.sell(17);
 
-console.log(HungerGames.getAvailability());
+// console.log(HungerGames.getAvailability());
+
+class TechnicalBook extends Book {
+    constructor(title, author, ISBN, numCopies, edition) {
+        super(title, author, ISBN, numCopies);
+        this.edition = edition
+    }
+
+// Method
+    getEdition() {
+        return `The current version of this book is ${this.edition}`
+    }
+}
+
+const CrackingTheCodingInterview = new TechnicalBook(
+    "Cracking the Coding Interview",
+    "Gayle Laackmann McDowell",
+    1209123,
+    7,
+    "2.3"
+);
+
+console.log(CrackingTheCodingInterview.availability)
+console.log(CrackingTheCodingInterview.getEdition())
