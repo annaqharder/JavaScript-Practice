@@ -64,6 +64,7 @@ class Book {
 
 // console.log(HungerGames.getAvailability());
 
+// TechnicalBooks.js
 class TechnicalBook extends Book {
     constructor(title, author, ISBN, numCopies, edition) {
         super(title, author, ISBN, numCopies);
