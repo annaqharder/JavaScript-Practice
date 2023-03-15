@@ -7,13 +7,13 @@ function arrayDiff(a, b) {
         return a
     }
 
-    let newA = null;
-    let newB = null;
+    let newA = a;
+    let newB = b;
 
     a.forEach((arrItem, arrIndex) => {
 
-        const aCopy = a.slice();
-        const bCopy = a.slice();
+        const aCopy = newA.slice();
+        const bCopy = newB.slice();
 
         if (b.includes(arrIndex)) {
             newA = aCopy.filter(item => item !== arrItem)
