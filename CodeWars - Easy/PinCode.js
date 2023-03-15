@@ -1,15 +1,19 @@
-function validatePIN(pin){
-    const fourDigitsRegex = /(^[0-9]{4}$)/;
-    const sixDigitsRegex = /(^[0-9]{6}$)/;
+// function validatePIN(pin){
+//     const fourDigitsRegex = /(^[0-9]{4}$)/;
+//     const sixDigitsRegex = /(^[0-9]{6}$)/;
 
-    const result1 = pin.match(fourDigitsRegex);
-    const result2 = pin.match(sixDigitsRegex);
+//     const result1 = pin.match(fourDigitsRegex);
+//     const result2 = pin.match(sixDigitsRegex);
 
-    if (!result1 && !result2) {
-        return false
-    } else {
-        return true
-    }
+//     if (!result1 && !result2) {
+//         return false
+//     } else {
+//         return true
+//     }
+// }
+
+function validatePIN(pin) {
+    return /^(\d{4}|\d{6})$/.test(pin)
 }
 
 console.log(validatePIN('123456'))
