@@ -9,4 +9,7 @@ function largestEvenNumber(arr) {
     return Math.max(...evenArr)
 }
 
+// const largestEvenNumber = (arr)  =>
+//     Math.max(...arr.filter(num => num % 2 === 0))
+
 console.log(largestEvenNumber([4, 7, 8, 15, 12, 19, 16, 21, 20, 24, 27]))
