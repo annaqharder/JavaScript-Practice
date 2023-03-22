@@ -6,6 +6,15 @@ function twoObjects(a, b) {
     return Object.entries(a).toString() === Object.entries(b).toString()
 }
 
+// const twoObjects = (obj1, obj2) => {
+//     for (let key in obj1) {
+//         if (!(key in obj2)) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
 console.log(twoObjects(objA, objB))
 console.log(twoObjects(objA, objC))
 console.log(twoObjects(objB, objC))
