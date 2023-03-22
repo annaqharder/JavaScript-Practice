@@ -3,11 +3,7 @@ const objB = {a: 1, b: 1, c: 1};
 const objC = {a: 1, b: 1, c: 1};
 
 function twoObjects(a, b) {
-    if (Object.keys(a).every(key => b[key])) {
-        return true
-    } else {
-        return false
-    }
+    return Object.entries(a).toString() === Object.entries(b).toString()
 }
 
 console.log(twoObjects(objA, objB))
