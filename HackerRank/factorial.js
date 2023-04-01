@@ -6,3 +6,5 @@ function factorial(n) {
 }
 
 console.log(factorial(4))
+console.log(factorial(56))
+console.log(factorial(21))
