@@ -1,4 +1,4 @@
-// recursion:
+// recursion
 
 var permute = function(nums){
     // global result
