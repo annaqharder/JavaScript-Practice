@@ -1,4 +1,4 @@
-const getAdjNeighbors = (i, j,grid, visited) => {
+const getAdjNeighbors = (i, j, grid, visited) => {
     const adjNeighbors = [];
 
     if(i > 0 && !visited[i - 1][j]) adjNeighbors.push([i - 1, j]);
