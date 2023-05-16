@@ -8,4 +8,4 @@ var reverse = function(x) {
 
 console.log(reverse(123))
 console.log(reverse(-123))
-console.log(reverse(120))
+console.log(reverse(012))
