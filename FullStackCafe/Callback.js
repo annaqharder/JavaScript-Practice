@@ -1,6 +1,6 @@
 function modifyArray(arr, callback) {
     // so something to arr here
-    arr.push(100);
+    arr.push(7);
     // then execute the callback function was passed
     callback();
 }
