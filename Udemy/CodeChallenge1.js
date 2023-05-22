@@ -22,3 +22,9 @@ console.log(jonas);
 
 const jonasNew = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job}!`;
 console.log(jonasNew)
+
+if(BMIJohn > BMIMark) {
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+} else {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+};
