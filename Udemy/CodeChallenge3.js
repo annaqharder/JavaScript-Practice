@@ -1,5 +1,5 @@
-const averageScoreDolphins = (96 + 108 + 89) / 3;
-const averageScoreKoalas = (88 + 91 + 110) / 3;
+const averageScoreDolphins = (97 + 112 + 101) / 3;
+const averageScoreKoalas = (109 + 95 + 123) / 3;
 
 if((averageScoreDolphins > averageScoreKoalas) && averageScoreDolphins > 100) {
     console.log("Dolphins are the winners")
