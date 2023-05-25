@@ -1,6 +1,6 @@
 const calcAverage = (a, b, c) => (a + b + c) / 3;
-const averageScoreDolphins = calcAverage(44, 23, 71);
-const averageScoreKoalas = calcAverage(65, 54, 49);
+const averageScoreDolphins = calcAverage(85, 54, 41);
+const averageScoreKoalas = calcAverage(23, 34, 27);
 
 console.log(averageScoreDolphins, averageScoreKoalas)
 
