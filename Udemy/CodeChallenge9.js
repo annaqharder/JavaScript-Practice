@@ -15,7 +15,7 @@ const printForcast = function (arr) {
 
   for (let i = 0; i < arr.length; i++) {
     currTemp = arr[i];
-    currDay = arr.indexOf(currTemp) + 1;
+    currDay = arr.indexOf(currTemp) + 1; // to add from indexed 0
     string = string + `${currTemp}°C in ${currDay} days ... `;
   }
   return string;
