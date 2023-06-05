@@ -1,10 +1,10 @@
 const convertNames = function (names) {
-  const arr = names.toLowerCase().trim().split("_");
+  const [first, second] = names.toLowerCase().trim().split("_");
 
-  const upperCase = [];
+  const upperCase = [first];
 
-  for (const n of arr) {
-    upperCase.push(n[0].toUpperCase() + n.slice(1));
+  for (const n of second) {
+    upperCase.push(n.replace(second[0], second[0].toUpperCase()));
   }
 
   const camelCase = upperCase.join("");
