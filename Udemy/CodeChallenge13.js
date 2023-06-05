@@ -1,5 +1,5 @@
 const convertNames = function (names) {
-  const arr = names.split("_");
+  const arr = names.toLowerCase().trim().split("_");
 
   const upperCase = [];
 
@@ -12,5 +12,5 @@ const convertNames = function (names) {
 };
 
 console.log(convertNames("underscore_case"));
-console.log(convertNames("Some_Variable"));
+console.log(convertNames("Some_VariaBLe"));
 console.log(convertNames("delayed_Departure"));
