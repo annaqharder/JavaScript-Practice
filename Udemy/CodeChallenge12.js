@@ -37,7 +37,7 @@ average, every ${time / gameEvents.size} minutes`);
 
 // 4.
 for (const [key, value] of gameEvents.entries()) {
-  key < 45
+  key <= 45
     ? console.log(`[FIRST HALF] ${key}: ${value}`)
     : console.log(`[SECOND HALF] ${key}: ${value}`);
 }
