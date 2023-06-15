@@ -39,7 +39,7 @@ const dFS = (i, j, grid, visited) => {
 
 var numIslands = function(grid) {
     const visited = grid.map(row => row.map(cell => false));
-
+                                  
     let islandCount = 0;
 
     // traverse through matrix
@@ -53,4 +53,4 @@ var numIslands = function(grid) {
 }
 
 
-console.log(numIslands([["1", "1", "1", "1", "0"], ["1", "1", "0", "1", "0"], ["1", "1", "0", "0", "0"], ["0", "0", "0", "0", "0"]]))
+console.log(numIslands([["1", "1", "1", "1", "0"], ["1", "1", "0", "1", "0"], ["1", "1", "0", "0", "0"], ["0", "0", "0", "0", "0"]]))                                                                                                                                                               
